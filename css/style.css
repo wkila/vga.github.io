@@ -213,7 +213,7 @@
     background: linear-gradient(90deg, rgba(9, 58, 120, 0) 0%, #093a78 50%, rgba(9, 58, 120, 0) 100%, rgba(255, 255, 255, 0) 255%, rgba(255, 255, 255, 0) 255%);
   }
   .team-new-section .content-fact .item .title-item h3 {
-    font-size: 11px !important;
+    font-size: 10px !important;
     text-align: center !important;
     padding-bottom: 6px !important;
   }
@@ -304,6 +304,36 @@
     font-size: 12px !important;
   }
 
+  .team-section .phone-block {
+    display: block !important;
+  }
+  .team-section .phone-block .header-phone {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .team-section .phone-block .header-phone .title {
+    width: 60% !important;
+    margin-top: 10px !important;
+  }
+  .team-section .phone-block .header-phone .title h3 {
+    font-size: 12px !important;
+    padding: 10px 10px 10px 0 !important;
+  }
+  .team-section .phone-block .header-phone .title h4 {
+    font-size: 10px !important;
+    padding: 0 10px 6px 0 !important;
+  }
+  .team-section .phone-block .content-phone {
+    padding-left: 38px !important;
+    padding-top: 10px !important;
+  }
+  .team-section .sub-section .content .item__image {
+    display: none !important;
+  }
+  .team-section .sub-section .content .item__content {
+    display: none !important;
+  }
   .team-section .sub-section .content .item__content .content-bottom {
     margin-left: -100px !important;
   }
@@ -312,7 +342,7 @@
     padding: 0px 0px 10px 0px !important;
   }
   .team-new-section .content-fact .item .title-item::before {
-    left: 11px !important;
+    left: 3px !important;
     top: 19px !important;
   }
 
@@ -345,6 +375,30 @@
   .team-section {
     padding-top: 30px !important;
   }
+  .team-section .phone-block {
+    display: block !important;
+  }
+  .team-section .phone-block .header-phone {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .team-section .phone-block .header-phone .title {
+    width: 60% !important;
+    margin-top: 10px !important;
+  }
+  .team-section .phone-block .header-phone .title h3 {
+    font-size: 12px !important;
+    padding: 10px 10px 10px 0 !important;
+  }
+  .team-section .phone-block .header-phone .title h4 {
+    font-size: 10px !important;
+    padding: 0 10px 6px 0 !important;
+  }
+  .team-section .phone-block .content-phone {
+    padding-left: 38px !important;
+    padding-top: 10px !important;
+  }
   .team-section .sub-section {
     padding-top: 30px !important;
   }
@@ -354,8 +408,14 @@
   .team-section .sub-section .content .item {
     padding-top: 0 !important;
   }
+  .team-section .sub-section .content .item__image {
+    display: none !important;
+  }
   .team-section .sub-section .content .item__header .title h6 {
     font-size: 12px !important;
+  }
+  .team-section .sub-section .content .item__content {
+    display: none !important;
   }
   .team-section .sub-section .content .item__content .content-bottom {
     margin-left: -80px !important;
@@ -384,6 +444,10 @@
 
   footer .content-footer .footer-section {
     padding: 50px 60px 0 60px !important;
+  }
+
+  footer .footer-after strong {
+    font-size: 10px !important;
   }
 
   .burger-menu .menu-foundament .menu-start .nav-items__item {
@@ -1078,7 +1142,7 @@ header {
   content: "";
   position: absolute;
   width: 10px;
-  height: 54px;
+  height: 100%;
   background: #3b6a17;
   left: -20px;
   top: -6px;
@@ -1233,6 +1297,26 @@ header {
   background-color: #000;
   max-width: 100%;
   padding-top: 70px;
+}
+.team-section .phone-block {
+  display: none;
+}
+.team-section .phone-block .header-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team-section .phone-block .header-phone .title {
+  text-align: end;
+  border-top: 1px solid #3b6a17;
+  border-bottom: 1px solid #3b6a17;
+  border-right: 1px solid #3b6a17;
+}
+.team-section .phone-block .header-phone .title h3 {
+  color: #3b6a17;
+}
+.team-section .phone-block .header-phone .title h4 {
+  color: #fff;
 }
 .team-section h2 {
   font-size: 40px;
@@ -1848,6 +1932,7 @@ footer .content-footer .footer-section {
           align-items: center;
 }
 footer .content-footer .footer-section .item {
+  text-align: center;
   padding-bottom: 12px;
 }
 footer .content-footer .footer-section .item a {
